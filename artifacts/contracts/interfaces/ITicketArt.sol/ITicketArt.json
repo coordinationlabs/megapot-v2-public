@@ -1,0 +1,69 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ITicketArt",
+  "sourceName": "contracts/interfaces/ITicketArt.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "ticketId",
+              "type": "uint256"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "drawingId",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "packedTicket",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "referralScheme",
+                  "type": "bytes32"
+                }
+              ],
+              "internalType": "struct IJackpotTicketNFT.TrackedTicket",
+              "name": "ticket",
+              "type": "tuple"
+            },
+            {
+              "internalType": "uint8[]",
+              "name": "normals",
+              "type": "uint8[]"
+            },
+            {
+              "internalType": "uint8",
+              "name": "bonusball",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct IJackpotTicketNFT.ExtendedTrackedTicket",
+          "name": "_ticket",
+          "type": "tuple"
+        }
+      ],
+      "name": "generateTokenURI",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

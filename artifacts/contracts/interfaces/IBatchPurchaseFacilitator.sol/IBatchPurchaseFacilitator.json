@@ -1,0 +1,168 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IBatchPurchaseFacilitator",
+  "sourceName": "contracts/interfaces/IBatchPurchaseFacilitator.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint64",
+          "name": "_dynamicCount",
+          "type": "uint64"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint8[]",
+              "name": "normals",
+              "type": "uint8[]"
+            },
+            {
+              "internalType": "uint8",
+              "name": "bonusball",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct IJackpot.Ticket[]",
+          "name": "_validStaticTickets",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "address[]",
+          "name": "_referrers",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "_referralSplit",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "createBatchOrder",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_recipient",
+          "type": "address"
+        }
+      ],
+      "name": "getBatchOrderInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "orderDrawingId",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "remainingUSDC",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "remainingTickets",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "totalTicketsOrdered",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "dynamicTicketCount",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "address[]",
+                  "name": "referrers",
+                  "type": "address[]"
+                },
+                {
+                  "internalType": "uint256[]",
+                  "name": "referralSplit",
+                  "type": "uint256[]"
+                }
+              ],
+              "internalType": "struct IBatchPurchaseFacilitator.BatchOrder",
+              "name": "batchOrder",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint8[]",
+                  "name": "normals",
+                  "type": "uint8[]"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "bonusball",
+                  "type": "uint8"
+                }
+              ],
+              "internalType": "struct IJackpot.Ticket[]",
+              "name": "staticTickets",
+              "type": "tuple[]"
+            }
+          ],
+          "internalType": "struct IBatchPurchaseFacilitator.BatchOrderInfo",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_recipient",
+          "type": "address"
+        }
+      ],
+      "name": "hasActiveBatchOrder",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "minimumTicketCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
