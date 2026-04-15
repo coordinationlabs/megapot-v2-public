@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "TicketComboTracker",
+  "sourceName": "contracts/lib/TicketComboTracker.sol",
+  "abi": [],
+  "bytecode": "0x6080806040523460175760399081601c823930815050f35b5f80fdfe5f80fdfea264697066735822122059cf982559d4b8e49320b3c5b7eb9a7f8d1bf5371b4abeff34b33dad09ed46df64736f6c634300081c0033",
+  "deployedBytecode": "0x5f80fdfea264697066735822122059cf982559d4b8e49320b3c5b7eb9a7f8d1bf5371b4abeff34b33dad09ed46df64736f6c634300081c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

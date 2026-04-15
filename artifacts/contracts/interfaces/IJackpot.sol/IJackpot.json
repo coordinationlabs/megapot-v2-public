@@ -1,0 +1,280 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IJackpot",
+  "sourceName": "contracts/interfaces/IJackpot.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint8[]",
+              "name": "normals",
+              "type": "uint8[]"
+            },
+            {
+              "internalType": "uint8",
+              "name": "bonusball",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct IJackpot.Ticket[]",
+          "name": "_tickets",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "address",
+          "name": "_recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "address[]",
+          "name": "_referrers",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "_referralSplitBps",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_source",
+          "type": "bytes32"
+        }
+      ],
+      "name": "buyTickets",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "ticketIds",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "_userTicketIds",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "claimWinnings",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "currentDrawingId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_drawingId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getDrawingState",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "prizePool",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "ticketPrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "edgePerTicket",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "referralWinShare",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "referralFee",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "globalTicketsBought",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lpEarnings",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "drawingTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "winningTicket",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint8",
+              "name": "ballMax",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "bonusballMax",
+              "type": "uint8"
+            },
+            {
+              "internalType": "contract IPayoutCalculator",
+              "name": "payoutCalculator",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "jackpotLock",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct IJackpot.DrawingState",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_drawingId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getDrawingTierPayouts",
+      "outputs": [
+        {
+          "internalType": "uint256[12]",
+          "name": "",
+          "type": "uint256[12]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "_ticketIds",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "getTicketTierIds",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "tierIds",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_drawingId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_packedTicket",
+          "type": "uint256"
+        }
+      ],
+      "name": "getUnpackedTicket",
+      "outputs": [
+        {
+          "internalType": "uint8[]",
+          "name": "",
+          "type": "uint8[]"
+        },
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "maxReferrers",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "normalBallMax",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ticketPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
