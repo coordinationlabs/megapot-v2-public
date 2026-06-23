@@ -1,6 +1,6 @@
 # MegaPot V2 Contracts
 
-MegaPot V2 is a decentralized jackpot protocol where users purchase NFT-based jackpot tickets and liquidity providers fund prize pools. The system uses Pyth Network entropy for provably fair drawings, automatically distributes winnings based on number matches, and includes cross-chain bridge functionality.
+MegaPot V2 is a decentralized jackpot protocol where users purchase NFT-based jackpot tickets and liquidity providers fund prize pools. The system uses Pyth Network entropy for provably fair drawings, automatically distributes winnings based on number matches, and includes cross-chain bridge functionality. The protocol is accessible across multiple chains, including Base, Ethereum, BNB Chain, Arbitrum, and more.
 
 ## Prerequisites
 
